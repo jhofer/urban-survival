@@ -2,7 +2,8 @@
   "name": "urban-survival",
   "version": "1.0.0",
   "description": "website",
-  "main": "index.js",
+  "main": "build/sever.js",
+
   "dependencies": {
     "express": "^4.12.2"
   },
@@ -12,6 +13,7 @@
     "gulp-typescript": "^2.4.2"
   },
   "scripts": {
+    "start": "node build/server.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
