@@ -17,7 +17,11 @@ gulp.task('resources', function() {
 });
 
 
-gulp.task('default',['scripts', 'resources'],  function() {
+
+gulp.task('default', ['scripts', 'resources']);
+
+
+gulp.task('server',['scripts', 'resources'],  function() {
     server.run(['build/server.js']);
 
     gulp.watch('application/**/*.ts', ['scripts','resources', server.run]);
